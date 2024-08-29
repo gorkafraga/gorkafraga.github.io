@@ -1,6 +1,17 @@
-## Whitepaper - Workflow
+## AFFORD
+### Whitepaper - Workflow
 -  [ ]  Discussion
--  [ ]  Proofread 
+-  [ ]  Proofread
+### Internal report 
+-  [ ]  Update (see tasks MS Teams)
+
+### Data index
+
+## Primer 
+### On Archiving
+-  [ ]  Revise language
+### Containers
+-  [ ]  Check Eva's comments
 
 ## UNIGE workshop 
 -  [x]  Set basic website
@@ -13,3 +24,6 @@
 ## SwissRN Working group - ORD 
 -  [ ]  SwissRN new website 
 -  [ ]  Analytics with Plausible? 
+
+## CAS UNIRIS
+-  [ ] Meet up 09.11 to discuss content
