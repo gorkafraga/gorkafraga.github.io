@@ -22,6 +22,7 @@
 -  [ ]  Curate zotero entries for WP1 
 
 ## SwissRN Working group - ORD 
+-  [ ]  R Calendar function
 -  [ ]  SwissRN new website 
 -  [ ]  Analytics with Plausible? 
 
