@@ -1,54 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gorka's profile</title>
+
 <style>
   body {
-    margin-left: 3%;
+    margin: 0;
+    padding: 3vh 4vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     color: black;
-    font-family: "Courier New", Courier, monospace;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    max-height: 100%;
+  }
+
+  img {
+    max-width: 35vw;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .text {
+    font-size: clamp(0.9rem, 1.1vw, 1.05rem);
+    line-height: 1.25;
+  }
+
+  h1 {
+    font-size: clamp(1.6rem, 2.2vw, 2rem);
+    margin: 0 0 0.5em 0;
   }
 
   a {
     color: black;
     text-decoration: none;
-    background-color: rgba(92, 107, 192, 0.2); /* Light indigo background with more transparency */
-    padding: 2px 10px;
+    background-color: rgba(92, 107, 192, 0.2);
+    padding: 2px 8px;
     border-radius: 4px;
-    transition: background-color 0.3s;
-    margin-top: 2px;
     display: inline-block;
-    line-height: 1;
+    margin: 2px 0;
+    transition: background-color 0.3s;
   }
 
   a:hover {
-    background-color: rgba(38, 50, 113, 0.7); /* Darker indigo background on hover */
+    background-color: rgba(38, 50, 113, 0.7);
     color: white;
   }
+
+  .section {
+    margin-top: 0.8em;
+  }
+
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    img {
+      max-width: 60vw;
+      max-height: 40vh;
+    }
+  }
 </style>
-<title>Gorka's profile</title>
-</head>   
+</head>
+
 <body>
-<img alt="photo of Gorka" src="Fraga_WebPic.svg" style="width:500px;height:500px;" />
-<pre style="font-size:x-large; font-family: sans-serif; line-height:100%;">
-<font size="+3"><strong>Gorka Fraga González, PhD </strong></font>
-Research data management | Data  Stewardship | Background in psychology and neuroscience
-Scientific staff at the Center for Reproducible Science and Research Synthesis, University of Zurich
-Born: mid 80's, Spain | Home: Zurich, Switzerland 
-Coding in: R, Python, Matlab
- 
-<a href="https://gitlab.uzh.ch/gorka.fragagonzalez"> Current code (contributed projects) </a> - Gitlab  
-<a href="https://orcid.org/0000-0002-1857-8607"> ORCID </a>  -  Open Researcher and Contributor ID
-<a href="https://www.linkedin.com/in/gfragagonzalez">Profile</a> - LinkedIn
-<a href="https://scholar.google.com/citations?user=pSAXHtYAAAAJ&hl=en">Scientific Publications</a> - Google scholar
+  <div class="container">
+    <img src="Fraga_WebPic.svg" alt="Photo of Gorka">
 
-> Current Work at the University of Zurich:
-  
-<a href="https://www.crs.uzh.ch/en/about-us/People/team/Gorka-Fraga-Gonzalez.html"> Scientific staff </a>  at the Center for Reproducible Science and Research Synthesis
-<a href="https://www.liri.uzh.ch/en/services/labitself/Data-Stewardship.html"> Data Steward  </a>  at the Linguistic Research Infrastructure (LiRI)
+    <div class="text">
+      <h1>Gorka Fraga González, PhD</h1>
 
+      Research data management | Data stewardship | Background in psychology and neuroscience<br>
+      Scientific staff at the Center for Reproducible Science and Research Synthesis, University of Zurich<br>
+      Born: mid 80's, Spain | Home: Zurich, Switzerland<br>
+      Coding in: R, Python, Matlab
 
-   
+      <div class="section">
+        <a href="https://gitlab.uzh.ch/gorka.fragagonzalez">Current code</a> – GitLab<br>
+        <a href="https://orcid.org/0000-0002-1857-8607">ORCID</a> – Open Researcher and Contributor ID<br>
+        <a href="https://www.linkedin.com/in/gfragagonzalez">Profile</a> – LinkedIn<br>
+        <a href="https://scholar.google.com/citations?user=pSAXHtYAAAAJ&hl=en">Scientific Publications</a> – Google Scholar
+      </div>
 
-</pre>
+      <div class="section">
+        <strong>&gt; Current Work at the University of Zurich:</strong><br>
+        <a href="https://www.crs.uzh.ch/en/about-us/People/team/Gorka-Fraga-Gonzalez.html">Scientific staff</a> – Center for Reproducible Science and Research Synthesis<br>
+        <a href="https://www.liri.uzh.ch/en/services/labitself/Data-Stewardship.html">Data Steward</a> – Linguistic Research Infrastructure (LiRI)
+      </div>
+    </div>
+  </div>
 </body>
 </html>
